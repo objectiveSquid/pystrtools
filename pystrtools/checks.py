@@ -1,5 +1,6 @@
 from typing import Iterable
 from . import consts
+import fnmatch
 
 
 def contains_only(string: str, charset: Iterable[str]) -> bool:
@@ -79,3 +80,27 @@ def is_ascii(string: str) -> bool:
 
 def is_ansi(string: str) -> bool:
     return contains_only(string, consts.ANSI_ALL)
+
+
+def is_anagram(string1: str, string2: str) -> bool:
+    return sorted(string1) == sorted(string2)
+
+
+def is_palindrome(string: str) -> bool:
+    return "".join(reversed(string)) == string
+
+
+def is_substring(source: str, sub: str) -> bool:
+    return sub in source
+
+
+def is_prefix(source: str, prefix: str) -> bool:
+    return source.startswith(prefix)
+
+
+def is_suffix(source: str, suffix: str) -> bool:
+    return source.endswith(suffix)
+
+
+def wildcard(string: str, pattern: str) -> bool:
+    return fnmatch.fnmatchcase(string, pattern)

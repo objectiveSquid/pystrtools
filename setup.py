@@ -10,7 +10,7 @@ CLASSIFIERS = [
 
 KEYWORDS = ["python", "strings", "string-analysis"]
 DEPENDENCIES = []
-VERSION = "0.1.1"
+VERSION = "0.1.2"
 NAME = "pystrtools"
 AUTHOR_NAME = "Magnus Zahle"
 AUTHOR_EMAIL = "objectivesquid@outlook.com"

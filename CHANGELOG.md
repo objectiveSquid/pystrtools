@@ -6,3 +6,7 @@ Added 16 constants
 
 ## 0.1.1
 Fixed imports
+
+## 0.1.2
+Added 1 analysis function
+Added 6 string checks
